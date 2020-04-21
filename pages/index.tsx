@@ -1,6 +1,12 @@
+import Head from "next/head"
+import { Search } from "../components/Search"
+
 const Index = () => (
   <>
-    <div>Index</div>
+    <Head>
+      <title>Pokedex</title>
+    </Head>
+    <Search />
   </>
 )
 

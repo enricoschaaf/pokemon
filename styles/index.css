@@ -10,6 +10,30 @@ html {
   }
 }
 
+.shimmer {
+  background: #f6f7f8;
+  background-image: linear-gradient(
+    to right,
+    #f6f7f8 0%,
+    #edeef1 20%,
+    #f6f7f8 40%,
+    #f6f7f8 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 800px 800px;
+  animation: 1s ease-in-out shimmer infinite forwards;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: -100% 0;
+  }
+}
+
 /* purgecss start ignore */
 @tailwind base;
 @tailwind components;
